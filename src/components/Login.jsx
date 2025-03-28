@@ -20,7 +20,7 @@ function Login() {
     setLoading(true);
     try {
       const res = await axios.post(`${BASE_URL}/login`, formData);
-      showSuccessToast("Login Successful! 🎉");
+      showSuccessToast("Login Successful!");
       setTimeout(() => navigate("/users"), 1000);
     } catch (error) {
       showErrorToast("Invalid Credentials!");
