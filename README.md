@@ -1,12 +1,43 @@
-# React + Vite
+User Management System (Reqres API)
+A simple User Management System built using React (Vite) + Tailwind CSS, integrating with the Reqres API to handle authentication, user listing, and CRUD operations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📌 Features
 
-Currently, two official plugins are available:
+✅ User Authentication (Login with email & password)
+✅ User List with Pagination
+✅ Edit User Details
+✅ Delete Users
+✅ React Router for Navigation
+✅ Axios for API Calls
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation & Setup
+1️. Clone the Repository
+git clone https://github.com/Rishabh5911/User-Management-System.git
+ 
+2. Install Dependencies
+npm install
 
-## Expanding the ESLint configuration
+3. Run the Project
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Authentication :
+Use the following credentials to log in:
+{
+  "email": "eve.holt@reqres.in",
+  "password": "cityslicka"
+}
+
+API Endpoints Used :
+1. Login (POST) : POST https://reqres.in/api/login
+2. Get Users (GET) : GET https://reqres.in/api/users?page=1
+3. Update User (PUT) : PUT https://reqres.in/api/users/{id}
+4. Delete User (DELETE) : DELETE https://reqres.in/api/users/{id}
+
+Tech Stack :
+
+Frontend: React (Vite) 
+Styling: Tailwind CSS 
+State Management: React Hooks
+API Handling: Axios
+Routing: React Router
+
